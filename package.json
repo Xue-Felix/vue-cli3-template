@@ -1,0 +1,56 @@
+{
+  "name": "vue-cli3-simple",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "yarn serve",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "commit": "git add . && git-cz",
+    "lint-staged": "lint-staged"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "**/*.js": "eslint --ext .js",
+    "**/*.vue": "eslint --ext .vue",
+    "src/**/*.scss": "stylelint --syntax scss && stylelint --fix scss",
+    "src/**/*.vue": "stylelint --fix"
+  },
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "fastclick": "^1.0.6",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1",
+    "yarn": "^1.19.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.10.0",
+    "@vue/cli-plugin-eslint": "^3.10.0",
+    "@vue/cli-service": "^3.10.0",
+    "@vue/eslint-config-prettier": "^5.0.0",
+    "babel-eslint": "^10.0.1",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "husky": "^3.0.3",
+    "image-webpack-loader": "^5.0.0",
+    "lint-staged": "^9.2.1",
+    "node-sass": "^4.9.0",
+    "postcss-pxtorem": "^4.0.1",
+    "prettier": "^1.18.2",
+    "sass-loader": "^7.1.0",
+    "sass-resources-loader": "^2.0.1",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0",
+    "vconsole": "^3.3.4",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
