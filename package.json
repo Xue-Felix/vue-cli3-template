@@ -43,7 +43,7 @@
     "husky": "^3.0.3",
     "image-webpack-loader": "^5.0.0",
     "lint-staged": "^9.2.1",
-    "node-sass": "^4.9.0",
+    "node-sass": "^7.0.0",
     "postcss-pxtorem": "^4.0.1",
     "prettier": "^1.18.2",
     "sass-loader": "^7.1.0",
